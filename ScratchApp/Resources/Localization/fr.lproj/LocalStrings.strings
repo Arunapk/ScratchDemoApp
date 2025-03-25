@@ -1,0 +1,44 @@
+/* 
+  LocalStrings.strings
+  ScratchApp
+
+  Created by HTS-676 on 28/12/24.
+  
+*/
+
+"welcome_message" = "Welcome to our app!";
+"login_button" = "Login";
+"more_items_from"= "More items from";
+"what_are_you_selling"= "What are you selling?";
+"describe_your_listing"= "Describe your listing";
+"enter_your_price"= "Enter your price";
+"please_upload_image"= "Please upload at least one image";
+"price"= "Price";
+"Price"= "PRICE";
+"selectcategory"= "Select Category";
+"itemcondition"= "Product Condition";
+"set_your_location"= "Set your location";
+"category"= "Category";
+"select_your_category" = "Select your category";
+"location" = "Location";
+"exchangebuy" = "Exchange to Buy";
+"fixedprice" = "Fixed Price";
+"post" = "Post";
+"cancel" = "Cancel";
+"sorry" = "Sorry!";
+"posting_list" = "Uploading..";
+"successfully_posted" = "Product listed successfully";
+"successfully_postedadmin" = "Listing posted. Waiting for approval.";
+"promote_listing" = "Promote your listing";
+"choose_category" = "Categorize your listing";
+"choose_condition" = "Product condition";
+"price_should" = "Enter a valid price";
+"your_product" = "Upload was  successful!";
+"your_product_not" = "Failed to upload. Try again.";
+"image_cannot" = "Failed to upload. Try again.";
+"image_uploading" = "Uploading..";
+"noItem" = "No items found";
+"noData" = "Record not found";
+
+
+

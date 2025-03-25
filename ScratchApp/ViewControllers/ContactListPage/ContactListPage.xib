@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactListPage" customModule="ScratchApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="9vb-ap-5VP" id="YRY-gs-0Qx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ec-ud-AHi">
+                    <rect key="frame" x="0.0" y="25" width="280" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhJ-LS-LL4">
+                    <rect key="frame" x="245" y="25" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="7zW-IS-En3"/>
+                        <constraint firstAttribute="height" constant="25" id="RRF-Ck-mE2"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Log out">
+                        <color key="titleColor" systemColor="systemRedColor"/>
+                    </state>
+                    <connections>
+                        <action selector="logoutAct:" destination="-1" eventType="touchUpInside" id="zQc-Eh-wK6"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9vb-ap-5VP">
+                    <rect key="frame" x="10" y="56" width="300" height="502"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="9vb-ap-5VP" secondAttribute="bottom" constant="10" id="6Cg-rp-hdl"/>
+                <constraint firstItem="2ec-ud-AHi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CVU-L5-wj7"/>
+                <constraint firstItem="2ec-ud-AHi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="GkB-Sc-XSz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dhJ-LS-LL4" secondAttribute="trailing" constant="5" id="Z5r-Lh-trT"/>
+                <constraint firstItem="9vb-ap-5VP" firstAttribute="top" secondItem="2ec-ud-AHi" secondAttribute="bottom" constant="10" id="aN3-eo-aLR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2ec-ud-AHi" secondAttribute="trailing" constant="40" id="c6I-Em-9OH"/>
+                <constraint firstItem="dhJ-LS-LL4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="cFA-op-7jP"/>
+                <constraint firstItem="9vb-ap-5VP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="eJa-DU-NBO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9vb-ap-5VP" secondAttribute="trailing" constant="10" id="ugz-5r-rdj"/>
+            </constraints>
+            <point key="canvasLocation" x="8" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
